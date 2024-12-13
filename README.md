@@ -1,5 +1,5 @@
 # 🏦 Palharini Personnalité
-Bem-vindo ao Palharini Personnalité, a solução mais sofisticada e personalizada para análise de crédito e gestão de cartões. Este projeto oferece uma experiência exclusiva e inovadora, conectando clientes às melhores oportunidades financeiras.
+Palharini Personnalité é um projeto pessoal desenvolvido com o objetivo de aprimorar habilidades em Python, SQL e gestão de dados. Ele simula um sistema completo de análise de crédito e gerenciamento de cartões, permitindo a aplicação de conceitos técnicos de desenvolvimento, banco de dados e lógica de programação.
 
 ## 🛠️ Tecnologias Utilizadas
 * Python 3.11.11
