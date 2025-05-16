@@ -1,21 +1,26 @@
 # 🏦 Palharini Personnalité
-Palharini Personnalité é um projeto pessoal desenvolvido com o objetivo de aprimorar habilidades em Python, SQL e gestão de dados. Ele simula um sistema completo de análise de crédito e gerenciamento de cartões, permitindo a aplicação de conceitos técnicos de desenvolvimento, banco de dados e lógica de programação.
+Palharini Personnalité é um projeto pessoal desenvolvido com o objetivo de aprimorar habilidades
+em Python, SQL e gestão de dados. Ele simula um sistema completo de análise de crédito e gerenciamento
+de cartões, permitindo a aplicação de conceitos técnicos de desenvolvimento, banco de dados e lógica de programação.
 
 ## 🛠️ Tecnologias Utilizadas
 * Python 3.11.11
 
 * SQLite para armazenamento de dados
 
+* Pandas e Matplotlib (relatórios e gráficos)
+
 * DB Browser for SQLite (opcional, para visualização gráfica)
 
 * IDE: PyCharm
 
 ## 📌 Objetivo
-Este projeto simula um sistema de análise de crédito:
+Simular um sistema de **análise de crédito** com base em regras específicas de aprovação. O sistema:
 
-1. Cria um banco de dados SQLite com clientes fictícios.
-2. Avalia os clientes com base em regras pré-definidas.
-3. Permite consultas SQL para visualizar os resultados (aprovados/negados).
+1. Cria um banco de dados SQLite com dados fictícios.
+2. Avalia os clientes com base em regras personalizadas.
+3. Permite consultas SQL manuais e automáticas.
+4. Gera relatórios em `.csv` e gráficos com visualização de dados.
 
 ## 📋 Funcionalidades
 🌟 *Avaliação de Crédito Personalizada:*
@@ -27,17 +32,19 @@ Inclui tipos de cartões com benefícios exclusivos e limites personalizados.
 🧑 💼 *Gerentes Especializados:*
 Cada tipo de cartão conta com um gerente dedicado.
 
-🔎 *Consulta de Dados Avançada:*
-Permite explorar clientes aprovados, tipos de cartões disponíveis e gerentes cadastrado
+## 🔎 Consultas e Relatórios
+- SQL para consultas manuais
+- Exportação para `.csv`
+- Dashboard com gráfico de pizza (pie chart) mostrando a proporção de aprovados e negados
 
 ## 📁 Estrutura do Projeto
-`criar_tabela.py` – Cria a tabela no banco de dados.
-    
-`inserir_dados.py` – Insere os clientes no banco.
-    
-`avaliar_credito.py` – Avalia os clientes com base nas regras.
-    
-`consultar_dados.py` – Faz consultas ao banco.
+    scripts/
+
+    ├── criar_tabela.py # Criação das tabelas no banco
+    ├── inserir_dados.py # População inicial do banco
+    ├── avaliar_credito.py # Avaliação automática dos clientes
+    ├── consultar_dados.py # Execução de queries no banco
+    └── relatorio_dashboard.py # Geração de relatório CSV e gráfico
 
 ## 📁 Estrutura do Banco de Dados
 
@@ -87,7 +94,12 @@ Guarda as informações dos gerentes responsáveis por cada tipo de cartão.
 | `Telefone`         | TEXT      | Telefone de contato do gerente            |
 | `ID_Cartao`        | INTEGER   | Identificador do cartão gerenciado         |
 
+## 📊 Dashboard de Crédito
 
+Ao rodar `relatorio_dashboard.py`, o projeto:
+
+- Gera um gráfico de pizza com a proporção de clientes aprovados e negados
+- Exporta um relatório para `relatorio_credito.csv`
 
 ## 🔗 Licença
 Este projeto está licenciado sob a MIT License. Sinta-se à vontade para usar, modificar e compartilhar.
