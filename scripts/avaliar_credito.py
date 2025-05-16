@@ -9,12 +9,14 @@ def avaliar_credito(cliente):
     else:
         return "Negado"
 
-cursor.execute("SELECT * FROM clientes;")
+cursor.execute("SELECT * FROM clientes")
 clientes = cursor.fetchall()
 
 for cliente in clientes:
     status = avaliar_credito(cliente)
-    cursor.execute("UPDATE clientes SET Aprovado = ? WHERE ID_Cliente = ?", (status, cliente[0]))
+    cursor.execute(
+        "UPDATE clientes SET Aprovado = ? WHERE ID_Cliente = ?",
+        (status, cliente[0]))
 
 conexao.commit()
 print("Avaliação de crédito concluída!")
